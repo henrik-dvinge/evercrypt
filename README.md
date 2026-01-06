@@ -1,2 +1,54 @@
 # evercrypt
 Client-side encryption tool – AES-256, zero-knowledge
+
+# Evercrypt Client-Side Encryption
+
+Evercrypt is a zero-knowledge encryption system that encrypts all data
+locally in the browser before anything is sent or stored.
+
+## Core Principles
+
+- Plaintext never leaves the browser
+- Encryption keys never leave the browser
+- Servers only ever see encrypted data
+- No accounts, no tracking, no recovery
+
+You can verify this by disconnecting your internet connection.
+Encryption and decryption continue to work offline.
+
+## Cryptographic Standards
+
+Evercrypt uses modern, well-established standards:
+
+- **AES-256-GCM** (Authenticated Encryption)
+- **PBKDF2 (SHA-256)** with 250,000 iterations
+- Cryptographically secure randomness from the browser
+- Versioned, self-contained encryption format
+
+These standards are widely used in secure messaging,
+password managers, and enterprise systems.
+
+## Security Properties
+
+- Confidentiality: encrypted data cannot be read
+- Integrity: tampering is automatically detected
+- Zero-knowledge: Evercrypt cannot decrypt user data
+- Forward compatibility via format versioning
+
+## Threat Model
+
+Protected against:
+- Server compromise
+- Database leaks
+- Admin access
+- Backups or logs
+
+Not protected against:
+- Malware on the user device
+- Keyloggers
+- Malicious browser extensions
+- Weak passwords
+
+## License
+
+MIT License
