@@ -1,6 +1,3 @@
-# evercrypt
-Client-side encryption tool – AES-256, zero-knowledge
-
 # Evercrypt Client-Side Encryption
 
 Evercrypt is a zero-knowledge encryption system that encrypts all data
